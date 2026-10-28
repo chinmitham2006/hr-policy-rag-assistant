@@ -1,52 +1,89 @@
-# HR Policy RAG Assistant
+# HR Policy RAG Assistant 🤖
 
-An AI-powered assistant designed to answer questions about HR policies by retrieving relevant information from policy documents using Retrieval-Augmented Generation (RAG).
+An AI-powered assistant that helps users find information from HR policy documents using **Retrieval-Augmented Generation (RAG)** and semantic search.
 
-## Overview
+## 🚀 Live Demo
 
-The HR Policy RAG Assistant helps users find information in HR policy documents without manually searching through lengthy files. It combines document retrieval with AI-generated responses to make policy information easier to access.
+**[👉 Try the HR Policy RAG Assistant](https://4f578636cec29e62dd.gradio.live)**
 
-## Features
+*Note: This Gradio share link is temporary and may stop working when the hosting session ends.*
 
-- Ask questions about HR policy documents.
-- Retrieve relevant information from documents.
-- Generate answers using a retrieval-augmented generation workflow.
-- Make HR information easier to search and understand.
+## 📌 Project Overview
 
-## Technologies
+HR policy documents can be lengthy and difficult to search manually. This project provides an interactive interface where users can ask questions and retrieve relevant information from HR policy documents.
 
-- Python
-- Retrieval-Augmented Generation (RAG)
-- Large Language Models (LLMs)
-- Document embeddings and vector search
-- [Add your actual framework and libraries here after verifying your notebook.]
+The system uses text embeddings and similarity search to identify policy passages relevant to a user's query.
 
-## How It Works
+## ✨ Features
+
+- 📄 Retrieve relevant information from HR policy documents.
+- 🔍 Semantic search using text embeddings.
+- 🧠 Find policy passages related to user questions.
+- 💬 Interactive question-and-answer interface using Gradio.
+- ⚡ Faster access to relevant policy information.
+
+## 🛠️ Technologies Used
+
+- **Python** — core programming language.
+- **Sentence Transformers** — generates text embeddings.
+- **FAISS** — performs similarity search over embeddings.
+- **NumPy** — handles numerical arrays and vectors.
+- **Gradio** — provides the interactive user interface.
+
+## ⚙️ How It Works
 
 1. Load the HR policy documents.
-2. Split the documents into smaller chunks.
-3. Convert the chunks into embeddings.
-4. Retrieve relevant chunks for a user's question.
-5. Use the retrieved context to generate an answer.
+2. Convert the documents into smaller text chunks.
+3. Generate embeddings for the text chunks.
+4. Convert the user's question into an embedding.
+5. Use FAISS to retrieve relevant text chunks.
+6. Display the retrieved information to the user.
 
-## Getting Started
+## 💻 Installation and Setup
 
-1. Clone this repository.
-2. Install the dependencies listed in `requirements.txt` (once added).
-3. Configure any required API keys securely.
-4. Run the notebook in Google Colab or a compatible Python environment.
+### 1. Clone the repository
 
-## Security Note
+```bash
+git clone https://github.com/YOUR_USERNAME/hr-policy-rag-assistant.git
+cd hr-policy-rag-assistant
+```
 
-Do not upload API keys, environment files, confidential HR documents, or personal information to the repository.
+Replace `YOUR_USERNAME` with your GitHub username.
 
-## Future Improvements
+### 2. Install dependencies
 
-- Support additional document formats.
-- Improve retrieval accuracy.
-- Add source references to answers.
-- Develop a user-friendly interface.
+```bash
+pip install -r requirements.txt
+```
 
-## Author
+### 3. Run the project
 
-Chinmitha
+Open the `.ipynb` notebook in Google Colab or Jupyter Notebook and execute the cells in order.
+
+## 📂 Project Structure
+
+```text
+hr-policy-rag-assistant/
+├── hr-policy-rag-assistant.ipynb
+├── README.md
+└── requirements.txt
+```
+
+The notebook filename above is illustrative; use the actual filename in your repository.
+
+## 🔮 Future Improvements
+
+- Integrate an LLM to generate natural-language answers from retrieved passages.
+- Display source references for answers.
+- Support multiple HR policy documents and file formats.
+- Improve retrieval accuracy and document handling.
+- Deploy the application using a persistent hosting service.
+
+## 🔐 Security
+
+Do not commit API keys, `.env` files, confidential HR documents, or personal information to a public repository.
+
+## 👩‍💻 Author
+
+**Chinmitha**
+
